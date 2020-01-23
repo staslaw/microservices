@@ -1,7 +1,7 @@
 package com.example.demoumbrella.api;
 
 import com.example.demoumbrella.model.FlatInfo;
-import com.example.demoumbrella.service.FlatInfoService;
+import com.example.demoumbrella.service.MasterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +14,11 @@ import java.util.List;
 public class HomeController {
 
     @Autowired
-    FlatInfoService flatInfoService;
+    MasterService masterService;
 
     @GetMapping
     public List<FlatInfo> getFullInfoFlatList() {
-        List<FlatInfo> list = flatInfoService.getFullInfoFlatList();
+        List<FlatInfo> list = masterService.getFullInfoFlatList();
         return list;
     }
 }

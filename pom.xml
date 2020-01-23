@@ -52,6 +52,7 @@
 	<modules>
 		<module>demo-ms1</module>
 		<module>demo-ms2</module>
+		<module>demo-ms3</module>
 		<module>demo-umbrella</module>
 		<module>discovery-server</module>
 	</modules>
