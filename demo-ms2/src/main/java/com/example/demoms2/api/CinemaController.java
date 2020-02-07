@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping(path = "")
 public class CinemaController {
 
     private CinemaService cinemaService;
